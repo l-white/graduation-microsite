@@ -1,0 +1,66 @@
+import { auto } from 'async';
+import React from 'react';
+import styled from 'styled-components';
+
+const homepageImage = {
+    width: "100%",
+    height: "auto",
+}
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+`;
+
+const HomePageBlock = styled.div`
+    background-color: #002e5b;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+`;
+
+const KeepInTouch = styled.div`
+    background-color: green;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+`;
+
+const AnotherHeading = styled.div`
+    background-color: mediumseagreen;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+`;
+
+const Home = () => {
+    return (
+        <>
+            <p><img style={homepageImage} src="/images/graduates-homepage.jpg" /></p>
+            <h1>Congratulations Class of 20xx!</h1>
+            <p>Join us on May 18, 2021 for our in-person graduation event.</p><p>Venue, 1800 Address Lane, Milwaukee WI 53202.</p>
+            <div><Container>
+                <div><HomePageBlock>
+                    <h2>Join us</h2>
+                    <p>Address Line 1<br />
+                    Address Line 2</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <button>Submit</button>
+                    </HomePageBlock></div>
+                <div><KeepInTouch>
+                    <h2>Submit Your Photos</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <button>Submit</button>
+                </KeepInTouch></div>
+                <div><AnotherHeading><h2>Another Heading</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p><button>Submit</button></AnotherHeading></div>
+            </Container></div>
+        </>
+    );
+}
+
+export default Home;
