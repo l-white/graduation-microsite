@@ -1,4 +1,3 @@
-import { auto } from 'async';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -40,7 +39,7 @@ const AnotherHeading = styled.div`
 const Home = () => {
     return (
         <>
-            <p><img style={homepageImage} src="/images/graduates-homepage.jpg" /></p>
+            <p><img alt="graduates pose in yellow gowns" style={homepageImage} src="/images/graduates-homepage.jpg" /></p>
             <h1>Congratulations Class of 20xx!</h1>
             <p>Join us on May 18, 2021 for our in-person graduation event.</p><p>Venue, 1800 Address Lane, Milwaukee WI 53202.</p>
             <div><Container>
