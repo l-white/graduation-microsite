@@ -7,13 +7,13 @@ const LogoStyle = {
     width: "175px"
 }
 
-const HeadingStyle = styled.p`
+/*const HeadingStyle = styled.p`
     font-size: 2em;
     background-color: tomato;
     margin: 10px auto 0;
     color: white;
     padding-bottom: 5px;
-    `;
+    `;*/
 
 const NavStyle = styled.nav`
   @media (max-width: 768px) {
