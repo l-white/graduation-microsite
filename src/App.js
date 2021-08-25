@@ -13,8 +13,8 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-          <Route path="/" component={Home} exact />
-        <Home />
+        <Route path="/" component={Home} exact />
+
         <Footer />
       </div>
     </Router>
