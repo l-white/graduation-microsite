@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Web developers who work for high schools or public school systems can modify the templates to create a customized graduation microsite.
 
 ## Available Scripts
 
