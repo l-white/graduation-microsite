@@ -32,7 +32,7 @@ const ImageText = styled.p`
 const ImageCard = (props) => {
     return (
         <div>
-        <ImageComponent style={{backgroundImage: "url(/images/DSC04427.JPG)"}}>
+        <ImageComponent>
             <div><ImageOverlay>
                 <p><ImageText>{props.imageText}</ImageText></p>
             </ImageOverlay></div>
@@ -41,7 +41,7 @@ const ImageCard = (props) => {
     );
 }
 
-export default ImageCard;
+export {ImageCard, ImageComponent};
 
 /*
 <ImageComponent style={{backgroundColor: "#002e5b"}}>
