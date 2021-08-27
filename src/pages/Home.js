@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from '../components/Card';
+import ImageCard from '../components/ImageCard';
+import './Home.css';
 
 const homepageImage = {
     width: "100%",
@@ -37,12 +39,26 @@ const AnotherHeading = styled.div`
     margin: 10px;
 `;
 
+const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+`;
+
 const Home = () => {
     return (
         <>
             <p><img alt="graduates pose in yellow gowns" style={homepageImage} src="/images/graduates-homepage.jpg" /></p>
             <h1>Congratulations Class of 20xx!</h1>
             <p>Join us on May 18, 2021 for our in-person graduation event.</p><p>Venue, 1800 Address Lane, Milwaukee WI 53202.</p>
+            <div><ImageContainer>
+                <ImageCard imageText="Join us at Panther Arena!"/>
+                <ImageCard imageText="Send grauation photos for our Messages webpage!"/>
+                <ImageCard imageText="Stay connected through our Alumni website." />
+            </ImageContainer></div>
+           
             <Card heading="JOIN US" buttonText="Submit"/>
             <div><Container>
                 <div><HomePageBlock>
