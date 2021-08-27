@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-
 const ImageComponent = styled.div`
     width: 500px;
     height: 300px;
@@ -27,16 +26,23 @@ const ImageOverlay = styled.div`
 const ImageText = styled.p`
     margin-left: 10px;
     font-weight: bold;
+    text-align: left;
 `;
 
 const ImageCard = (props) => {
     return (
-        <div className={props.imageClass}><ImageComponent>
+        <div>
+        <ImageComponent style={{backgroundImage: "url(/images/DSC04427.JPG)"}}>
             <div><ImageOverlay>
                 <p><ImageText>{props.imageText}</ImageText></p>
             </ImageOverlay></div>
-        </ImageComponent></div>
+        </ImageComponent>
+        </div>
     );
 }
 
 export default ImageCard;
+
+/*
+<ImageComponent style={{backgroundColor: "#002e5b"}}>
+*/
