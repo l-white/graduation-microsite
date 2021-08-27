@@ -48,6 +48,10 @@ const ImageContainer = styled.div`
     align-items: center;
 `;
 
+const firstImgStyle = {
+    backgroundImage: "url(/images/DSC04427.JPG)",
+}
+
 const Home = () => {
     return (
         <>
@@ -55,7 +59,7 @@ const Home = () => {
             <h1>Congratulations Class of 20xx!</h1>
             <p>Join us on May 18, 2021 for our in-person graduation event.</p><p>Venue, 1800 Address Lane, Milwaukee WI 53202.</p>
             <div><ImageContainer >
-                <ImageComponent style={{backgroundImage: "url(/images/DSC04427.JPG)"}} imageText="Join us at Panther Arena!" />
+                <ImageCard /*style={firstImgStyle}*/ imageText="Join us at Panther Arena!" />
                 <ImageComponent style={{backgroundColor: "tomato"}} imageText="Send grauation photos for our Messages webpage!"/>
                 <ImageCard imageText="Stay connected through our Alumni website." />
             </ImageContainer></div>
